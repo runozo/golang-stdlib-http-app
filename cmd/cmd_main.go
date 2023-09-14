@@ -6,6 +6,10 @@ import (
 	"net"
 )
 
+// main is the entry point function of the Go program.
+//
+// It does not take any parameters.
+// It does not have a return type.
 func main() {
 	var (
 		host = flag.String("host", "", "host http address to listen on")

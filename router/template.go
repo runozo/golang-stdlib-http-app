@@ -15,6 +15,12 @@ var templateFiles = []string{
 	"./web/templates/base.gohtml",
 }
 
+// tmplLayout appends the given files to the templateFiles slice.
+//
+// It takes a variadic parameter `files` of type `string` which represents
+// the files to be appended to the `templateFiles` slice.
+//
+// It returns a slice of strings.
 func tmplLayout(files ...string) []string {
 	return append(templateFiles, files...)
 }

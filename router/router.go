@@ -28,6 +28,10 @@ var tasks = []map[string]string{
 	{"id": "task-10", "title": "Test 10", "details": "a test task 10", "status": "inactive"},
 }
 
+// taskListPage returns an http.HandlerFunc that renders the task list page.
+//
+// The function takes no parameters.
+// It returns an http.HandlerFunc.
 func taskListPage() http.HandlerFunc {
 	files := tmplLayout("./web/templates/index.gohtml")
 	tmpl := template.Must(template.New("index").Funcs(defaultFuncs).ParseFiles(files...))

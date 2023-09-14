@@ -7,6 +7,10 @@ import (
 	"github.com/runozo/golang-stdlib-http-app/router"
 )
 
+// runHttp runs an HTTP server on the specified listen address.
+//
+// listenAddr: The address to listen on.
+// Returns an error if there was a problem starting the server.
 func runHttp(listenAddr string) error {
 	s := http.Server{
 		Addr:    listenAddr,
